@@ -127,7 +127,7 @@ void Dijkstra(int const(*map)[Max],int start,TABLE T[])
 			
 			if(EdgeLength!=0 && EdgeLength!=X && T[i]->visited==0)
 			{
-				if(T[i]->distance > EdgeLength + T[current]->distance);
+				if(T[i]->distance > EdgeLength + T[current]->distance)
 				{
 					T[i]->distance = EdgeLength + T[current]->distance;
 					enqueue(Q,T[i]);
